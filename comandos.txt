@@ -1,0 +1,30 @@
+git config --global user.name itsquelc
+git config --global user.email raquelnunescirino@gmail.com
+
+sln -> solução
+-o -> saída, cria a pasta do projeto
+dotnet sln add QuelloStore\QuelloStore.csproj -> associa o projeto na solução
+
+Ordem para criar um site:
+dotnet new sln --name  QuelloStore
+dotnet new mvc -o QuelloStore
+dotnet sln add QuelloStore\QuelloStore.csproj
+
+cd QuelloStore
+entrar no nuget -
+https://www.nuget.org/packages?q=entityframeworkcore
+pegar codigos -
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design 
+Microsoft.EntityFrameworkCore.Tools 
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+pesquisar MySql
+MySql.EntityFrameworkCore
+
+codigos:
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.1
+dotnet add package MySql.EntityFrameworkCore --version 9.0.0
