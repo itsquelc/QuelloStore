@@ -28,3 +28,13 @@ dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.1
 dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.1
 dotnet add package MySql.EntityFrameworkCore --version 9.0.0
+
+cjproj
+<Nullable>disable</Nullable>
+
+models/errorviewmodel
+tirar o ?
+
+- criar a camada de dados (Models) - botão direto - class - Categoria
+- criar a camada de dados (Produto)
+[StringLength] - so em string
