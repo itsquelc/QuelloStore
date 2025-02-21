@@ -38,3 +38,6 @@ tirar o ?
 - criar a camada de dados (Models) - botão direto - class - Categoria
 - criar a camada de dados (Produto)
 [StringLength] - so em string
+- criar a camada de dados (ProdutoFoto)
+- criar a camada de dados (Usuario)
+- criar pasta data, class, AppDbContext
