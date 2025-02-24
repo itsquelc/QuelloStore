@@ -1,5 +1,5 @@
 git config --global user.name itsquelc
-git config --global user.email raquelnunescirino@gmail.com
+git config --global user.email raquelnunescirino@gmail.com 
 
 sln -> solução
 -o -> saída, cria a pasta do projeto
@@ -38,6 +38,18 @@ tirar o ?
 - criar a camada de dados (Models) - botão direto - class - Categoria
 - criar a camada de dados (Produto)
 [StringLength] - so em string
-- criar a camada de dados (ProdutoFoto)
+- criar a camada de dados (ProdutoFoto) - (rnf)
 - criar a camada de dados (Usuario)
 - criar pasta data, class, AppDbContext
+
+ "public AppDbContext(Parameters)" - (ctor)
+ "override onm"
+
+ #region - organização do cogigo
+
+ - Configurar a ConnectionString no appsettings.json
+" "ConnectionStrings": {
+    "QuelloStoreConn" : "server=localhost;port=3306;database=quellostoremtec;uid=root;pwd=''"
+}"
+ - Adicionar os serviços de contexto e Identity no Program.cs - olhar na pagina
+
