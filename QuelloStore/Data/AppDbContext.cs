@@ -19,6 +19,9 @@ namespace QuelloStore.Data;
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+    
+        AppDbSeed seed = new (builder);
+        
         #region  Renomear Tabelas do Identity
         builder.Entity<IdentityUser>().ToTable("usuario");
         builder.Entity<IdentityUserRole<string>>().ToTable("usuario_perfil");

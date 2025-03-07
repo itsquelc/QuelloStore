@@ -53,3 +53,7 @@ tirar o ?
 }"
  - Adicionar os serviços de contexto e Identity no Program.cs - olhar na pagina
 
+- colocar imagens na pasta wwwroot
+- fazer appDBSeed.cs
+-produto.cs (mdoels) - adc o destaque
+- AppDbContext  (AppDbSeed seed = new (builder);)

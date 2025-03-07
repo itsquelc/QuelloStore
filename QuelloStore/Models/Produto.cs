@@ -34,5 +34,10 @@ namespace QuelloStore.Models;
          [Display(Name = "Valor Venda")]
         [Range(0, double.MaxValue)]
         [Column(TypeName = "numeric(10,2)")]
-        public string ValorVenda { get; set; }
+        public decimal ValorVenda { get; set; }
+
+        public bool Destaque { get; set;  }
+
+        public List<ProdutoFoto> Fotos { get; set; }
+
     }
