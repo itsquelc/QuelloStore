@@ -1,5 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using QuelloStore.Data;
 using QuelloStore.Models;
 
 namespace QuelloStore.Controllers;
@@ -7,15 +9,21 @@ namespace QuelloStore.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly AppDbContext _db;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger , AppDbContext db)
     {
         _logger = logger;
+        _db = db;
     }
 
     public IActionResult Index()
     {
-        return View();
+       List<Produto> produtos = _db.Produtos
+            .Where(p => p.Destaque)
+            .Include(p => p.Fotos)
+            .ToList();
+        return View(produtos);
     }
 
     public IActionResult Privacy()

@@ -129,3 +129,15 @@ no layout.cshtml colar na primeira linha
 foram encontradas no fim do arquivo
 
 colar a bootstrap.css no wwwroot, css
+
+-abrir xamp quando for executar
+
+-views/home/index, apagar div, deixar so home e colar e header (termina em section) shift+alt+f alinha
+
+-bootswatch, a cor desse codigo muda no layout.cshtml, dentro do shared
+
+-homecontroller, adc AppDbContext no public homecontroller e adc a {
+    _db = db;
+}
+depois adc private readonly AppDbContext _db;
+mexer na public index (adc produto...)
