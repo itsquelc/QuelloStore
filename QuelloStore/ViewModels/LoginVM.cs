@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotions;
+using System.ComponentModel.DataAnnotations;
 namespace QuelloStore.ViewModels;
 
     public class LoginVM

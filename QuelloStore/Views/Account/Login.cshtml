@@ -1,0 +1,26 @@
+@model QuelloStore.ViewModels.LoginVM
+@{
+    ViewData["Title"] = "Login" ;
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml" ;
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <h1 class="display-5 text-center"> QuelloStore</h1>
+        <div class="col-lg-5"></div>
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header">
+                    <h3 class="text-center font-weight-light my-4">Login</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Login" method="post">
+                        <div asp-validation-sumary="ModelOnly" hidden></div>
+                        <input type="hideen" asp-for="UrlRetorno">
+                        <div class="form-floating-mb-3">
+                            <input class="form-control">
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>

@@ -1,19 +1,21 @@
 using QuelloStore.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using QuelloStore.ViewModels;
+
 
 namespace QuelloStore.Controllers;
 
     public class AccountController : Controller
     {
         private readonly ILogger<AccountController> _logger;
-        private readonly SignInmanager<Usuario> _signInMananger;
+        private readonly SignInManager<Usuario> _signInMananger;
         private readonly UserManager<Usuario> _userManager;
         private readonly IWebHostEnvironment _host;
 
         public AccountController(
             ILogger<AccountController> logger,
-            SignInmanager<Usuario> signInmanager,
+            SignInManager<Usuario> signInmanager,
             UserManager<Usuario> userManager,
             IWebHostEnvironment host
             )
