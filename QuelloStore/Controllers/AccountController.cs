@@ -2,6 +2,8 @@ using QuelloStore.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using QuelloStore.ViewModels;
+using System.Net.Mail;
+using System.Security.Claims;
 
 
 namespace QuelloStore.Controllers;
@@ -36,4 +38,27 @@ namespace QuelloStore.Controllers;
         return View(login);
     }
 
+[HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> Login(LoginVM login)
+{
+    if (ModelState.IsValid)
+    {
+        string userName = login.Email;
     }
+}
+
+    }
+
+public bool IsValidEmail(string email)
+{
+    try
+    {
+        MailAddress m = new(email);
+        return true;
+    }
+    catch (FormatException)
+    {
+        return false;
+    }
+}
