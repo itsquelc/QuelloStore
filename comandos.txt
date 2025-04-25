@@ -141,3 +141,5 @@ colar a bootstrap.css no wwwroot, css
 }
 depois adc private readonly AppDbContext _db;
 mexer na public index (adc produto...)
+
+erro na 43
