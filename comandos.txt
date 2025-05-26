@@ -143,3 +143,5 @@ depois adc private readonly AppDbContext _db;
 mexer na public index (adc produto...)
 
 erro na 43
+
+dotnet aspnet-codegenerator controller -name CategoriasController --model Categoria --dataContext AppDbContext --layout "~/Views/Shared/_LayoutAdmin.cshtml" -outDir controllers
